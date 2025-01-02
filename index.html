@@ -6,13 +6,14 @@
     <title>Book Tabs Project</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #121212; /* Dark background */
-            color: white;
-            transition: background-color 0.3s ease;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #003842, #0f0b02); /* Dark gradient background */
+    color: white;
+    transition: background 0.3s ease;
+}
+
 
         header {
             text-align: center;
@@ -54,7 +55,6 @@
                     transform: scale(1);
                 }
             }
-
             button {
     margin: 20px;
     padding: 15px 30px;
@@ -62,16 +62,16 @@
     cursor: pointer;
     border: none;
     border-radius: 50px;
-    background-color: #119494; /* Changed to a vibrant color */
+    background: linear-gradient(45deg, #119494, #00b3b3); /* Gradient background for the button */
     color: white;
-    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 15px rgba(16, 189, 53, 0.5); /* Enhanced shadow effect */
-    animation: buttonScale 0.8s infinite alternate;
+    animation: buttonScale 1s ease-in-out infinite alternate; /* Increased animation duration */
 }
 
 button:hover {
-    background-color: #001aff; /* Darker shade of the button color on hover */
-    transform: translateY(-5px) scale(1.05); /* Slight scale effect with hover */
+    background: linear-gradient(45deg, #001aff, #0051ff); /* Slightly darker gradient on hover */
+    transform: translateY(-5px) scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 99, 71, 0.7); /* Glowing effect on hover */
     animation: none; /* Disable animation during hover for a smoother effect */
 }
@@ -91,56 +91,65 @@ button:focus {
     }
 }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-        }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
 
-        .subject-section {
-            margin: 40px 0;
-            text-align: center;
-            animation: fadeIn 2s ease-out;
-        }
+.subject-section {
+    margin: 40px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
 
-        .subject-buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeIn 3s ease-out;
-        }
+.subject-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 3s ease-out;
+}
 
-        .subject-buttons button {
-            background-color: #7303a0;
-            margin: 15px;
-            padding: 12px 25px;
-            font-size: 18px;
-            width: 200px;
-            border-radius: 30px;
-            box-shadow: 0 4px 6px rgba(30, 115, 165, 0.2);
-            transition: background-color 0.9s, transform 0.2s ease;
-            animation: buttonScale 0.8s infinite alternate;
-        }
+.subject-buttons button {
+    background: linear-gradient(45deg, #7303a0, #190564); /* Gradient background for the subject buttons */
+    margin: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(30, 115, 165, 0.2);
+    transition: background 1s ease, transform 0.3s ease; /* Slower transition for background color */
+    animation: buttonScale 1s ease-in-out infinite alternate;
+}
 
-        .subject-buttons button:hover {
-            background-color: #eb2291;
-            transform: translateY(-5px);
-            animation: none;
-        }
+.subject-buttons button:hover {
+    background: linear-gradient(45deg, #00cc0a, #39006e); /* Hover effect with gradient */
+    transform: translateY(-5px);
+    animation: none; /* Disable animation during hover for a smoother effect */
+}
 
-        .subject-buttons button:focus {
-            outline: none;
-        }
+.subject-buttons button:focus {
+    outline: none;
+}
 
-        .subject-buttons button:nth-child(even) {
-            background-color: #44ac30;
-            animation: none;
-        }
+.subject-buttons button:nth-child(even) {
+    background: linear-gradient(45deg, #7303a0, #190564); /* Gradient background for the subject buttons */
+    margin: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(30, 115, 165, 0.2);
+    transition: background 1s ease, transform 0.3s ease; /* Slower transition for background color */
+    animation: buttonScale 1s ease-in-out infinite alternate;
+}
 
-        .subject-buttons button:nth-child(even):hover {
-            background-color: #e67e22;
-        }
+.subject-buttons button:nth-child(even):hover {
+    background: linear-gradient(45deg, #00cc0a, #39006e); /* Hover effect with gradient */
+    transform: translateY(-5px);
+    animation: none; /* Disable animation during hover for a smoother effect */
+}
 
         @media (max-width: 768px) {
             h1 {
@@ -167,7 +176,7 @@ button:focus {
 
     <header>
         <h1>Class 9 books for Science (2025)</h1>
-      
+
     </header>
 
     <div class="container">
