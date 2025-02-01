@@ -233,45 +233,24 @@ button:focus {
         <p>Made by <a href="https://md-raiyan-islam.wuaze.com/" target="_blank" style="color: #63f700; text-decoration: none; font-size: 36px; font-family: 'Emilys Candy', cursive;">Raiyan</a></p>
     </footer>
     <script>
-        // Open 13 book tabs when the main button is clicked
-        document.getElementById('openBooksBtn').addEventListener('click', function() {
-    const bookUrls = [
-        'https://drive.google.com/file/d/1EL_DZGQXh-w2qVVlHKo_BWOXkiPWGF3R/view?usp=drive_link',  // Bangla Sahitya
-        'https://drive.google.com/file/d/1uNspy7qUYc8I8WffkaEVt9caBGlS_LCG/view?usp=drive_link',  // Bangla Sohopath
-        'https://drive.google.com/file/d/1GoV6AJ9fgbtmiNopCXsviq8aatjSPxUG/view?usp=drive_link',  // Bangla Bhashar Byakaran
-        'https://drive.google.com/file/d/1xONzJ-pbBkoCe68JKvIpL42wBmpuGVNI/view?usp=drive_link',  // English For Today
-        'https://drive.google.com/file/d/1iVqQ5X3jw3UmnHKclSKkDyD4R2m9dY9J/view?usp=drive_link',  // English Grammar and Composition
-        'https://drive.google.com/file/d/1EBAGV3MrF3l-jnqgS6Z2tgk9pRTa3vzC/view?usp=drive_link',  // Mathematics
-        'https://drive.google.com/file/d/1U_q1wBTUS1ngtfqRr21LB-nQGjxXrrsA/view?usp=drive_link',  // Uccotoro Ganit
-        'https://drive.google.com/file/d/10DYq8yuMb3tgWgTZ7fXx_KThABOUJR6k/view?usp=drive_link',  // ICT
-        'https://drive.google.com/file/d/1oo1WdiUlnE5FErGB5SZ81FPxIa_YZjBu/view?usp=drive_link',  // Science
-        'https://drive.google.com/file/d/11i2p_9t4uiL60MQ9xz4HPs6SlpBF-TGF/view?usp=drive_link',  // Physics
-        'https://drive.google.com/file/d/1PI_54DEiHPLCA4DEGohamxFy53oHhKFC/view?usp=drive_link',  // Chemistry
-        'https://drive.google.com/file/d/18UfJre9Qz5fy7w6dejqsXKHQxxKqoAmH/view?usp=drive_link',  // Islamic Studies
-        'https://drive.google.com/file/d/1C7K6iGBpGEdr-p_vQfvEgMlDXh5ss8RI/view?usp=drive_link'   // Bangladesh And Global Studies
-    ];
-
-    bookUrls.forEach(url => {
-        window.open(url, '_blank');
-    });
-});
+        
 
         // Open different subject links in new tabs when the subject buttons are clicked
         function openSubjectLink(subject) {
             const subjectLinks = {
-                'Bangla Sahitya': 'https://drive.google.com/file/d/1EL_DZGQXh-w2qVVlHKo_BWOXkiPWGF3R/view?usp=drive_link',
-                'Bangla Sohopath': 'https://drive.google.com/file/d/1uNspy7qUYc8I8WffkaEVt9caBGlS_LCG/view?usp=drive_link',
-                'Bangla Bhashar Byakaran': 'https://drive.google.com/file/d/1KulN0KULPauTCpfl9kT9cjz8zfPqtMDx/view',
-                'English For Today': 'https://drive.google.com/file/d/1xONzJ-pbBkoCe68JKvIpL42wBmpuGVNI/view?usp=drive_link',
-                'English Grammar and Composition': 'https://drive.google.com/file/d/1iVqQ5X3jw3UmnHKclSKkDyD4R2m9dY9J/view?usp=drive_link',
-                'Mathematics': 'https://drive.google.com/file/d/1EBAGV3MrF3l-jnqgS6Z2tgk9pRTa3vzC/view?usp=drive_link',
-                'Uccotoro Ganit': 'https://drive.google.com/file/d/1U_q1wBTUS1ngtfqRr21LB-nQGjxXrrsA/view?usp=drive_link',
-                'ICT': 'https://drive.google.com/file/d/10DYq8yuMb3tgWgTZ7fXx_KThABOUJR6k/view?usp=drive_link',
-                'Science': 'https://drive.google.com/file/d/1ypBAOolJX6cJqWdiG16xrUPWNjIpFl5Y/view',
-                'Physics': 'https://drive.google.com/file/d/11i2p_9t4uiL60MQ9xz4HPs6SlpBF-TGF/view?usp=drive_link',
-                'Chemistry': 'https://drive.google.com/file/d/1PI_54DEiHPLCA4DEGohamxFy53oHhKFC/view?usp=drive_link',
-                'Islamic Studies': 'https://drive.google.com/file/d/18UfJre9Qz5fy7w6dejqsXKHQxxKqoAmH/view?usp=drive_link',
-                'Bangladesh And Global Studies': 'https://drive.google.com/file/d/1C7K6iGBpGEdr-p_vQfvEgMlDXh5ss8RI/view?usp=drive_link'
+                'Bangla Sahitya': 'file:///F:/All%20books/Bangla%20Sahitto%20pdf%20class%209-10%20com_oc.pdf',
+                'Bangla Sohopath': 'file:///F:/All%20books/%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%95%E0%A6%B0%E0%A6%A3-nctbbook.com.pdf',
+                'Bangla Bhashar Byakaran': 'file:///F:/All%20books/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%20%E0%A6%B8%E0%A6%B9%E0%A6%AA%E0%A6%BE%E0%A6%A0-pdf%202025%20com_oc.pdf',
+                'English For Today': 'file:///F:/All%20books/English-nctbbook.com.pdf',
+                'English Grammar and Composition': 'file:///F:/All%20books/English%20Grammer%20pdf%20class%209-10%20com_oc.pdf',
+                'Mathematics': 'file:///F:/All%20books/Mathmatics%20pdf%20class%209-10%20com_oc.pdf',
+                'Uccotoro Ganit': 'file:///F:/All%20books/Higher%20Math%20pdf%20class%209-10%20com_oc.pdf',
+                'ICT': 'file:///F:/All%20books/ICT%20pdf%20class%209-10%20com__11zon.pdf',
+                'Science': 'file:///F:/All%20books/%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%A8-nctbbook.com.pdf',
+                'Physics': 'file:///F:/All%20books/Physics%20pdf%20class%209-10%20com_oc.pdf',
+                'Chemistry': 'file:///F:/All%20books/Chmistry%20pdf%20class%209-10%20com_oc.pdf',
+                'Islamic Studies': 'file:///F:/All%20books/Islam%20pdf%20class%209-10%20com_oc.pdf',
+                'Bangladesh And Global Studies': 'file:///F:/All%20books/BGS%20pdf%20class%209-10%20com_oc.pdf'
             };
 
             const url = subjectLinks[subject];
